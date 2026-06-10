@@ -1,0 +1,44 @@
+{
+  "redirects": [
+    {
+      "source": "/mobile",
+      "destination": "/mobile-launcher.html",
+      "permanent": false
+    },
+    {
+      "source": "/dashboard",
+      "destination": "/dashboard-launcher.html",
+      "permanent": false
+    }
+  ],
+  "rewrites": [
+    {
+      "source": "/pages/:path*",
+      "destination": "/mobile_reworth/figma-html/pages/:path*"
+    },
+    {
+      "source": "/partials/:path*",
+      "destination": "/mobile_reworth/figma-html/partials/:path*"
+    },
+    {
+      "source": "/assets/:path*",
+      "destination": "/mobile_reworth/figma-html/assets/:path*"
+    },
+    {
+      "source": "/styles.css",
+      "destination": "/mobile_reworth/figma-html/styles.css"
+    },
+    {
+      "source": "/gallery.html",
+      "destination": "/mobile_reworth/figma-html/gallery.html"
+    },
+    {
+      "source": "/launcher.html",
+      "destination": "/mobile_reworth/figma-html/launcher.html"
+    },
+    {
+      "source": "/backend/api/:name.php",
+      "destination": "/mobile_reworth/figma-html/api/:name"
+    }
+  ]
+}

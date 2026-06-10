@@ -1,0 +1,222 @@
+:root {
+  --green: #8eea5b;
+  --deep: #07120c;
+  --panel: rgba(255, 255, 255, 0.08);
+  --line: rgba(255, 255, 255, 0.14);
+  --muted: rgba(255, 255, 255, 0.72);
+  --white: #ffffff;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  margin: 0;
+  color: var(--white);
+  font-family: "Poppins", sans-serif;
+  background:
+    radial-gradient(circle at 80% 8%, rgba(142, 234, 91, 0.22), transparent 30rem),
+    radial-gradient(circle at 12% 88%, rgba(46, 125, 50, 0.28), transparent 28rem),
+    linear-gradient(135deg, #020705, #0c2416 56%, #14351b);
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.shell {
+  width: min(1180px, 100%);
+  min-height: 100vh;
+  margin: 0 auto;
+  padding: 32px 20px 56px;
+  display: grid;
+  align-items: center;
+}
+
+.hero,
+.section-card {
+  border: 1px solid var(--line);
+  border-radius: 34px;
+  background: linear-gradient(145deg, rgba(255, 255, 255, 0.09), rgba(8, 17, 12, 0.68));
+  box-shadow: 0 26px 70px rgba(0, 0, 0, 0.28);
+}
+
+.hero {
+  padding: clamp(24px, 4vw, 40px);
+}
+
+.eyebrow,
+.choice-kicker,
+.path-kicker {
+  color: var(--green);
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+
+h1 {
+  max-width: 780px;
+  margin: 12px 0 10px;
+  font-size: clamp(36px, 7vw, 76px);
+  line-height: 0.96;
+  letter-spacing: -0.055em;
+}
+
+h2 {
+  margin: 0;
+  font-size: clamp(24px, 4vw, 42px);
+  line-height: 1;
+  letter-spacing: -0.04em;
+}
+
+p {
+  max-width: 720px;
+  margin: 0;
+  color: var(--muted);
+  font-size: 15px;
+  line-height: 1.75;
+}
+
+.top-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.back-link {
+  display: inline-flex;
+  min-height: 42px;
+  align-items: center;
+  padding: 0 16px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.08);
+  color: var(--white);
+  font-size: 13px;
+  font-weight: 800;
+}
+
+.choice-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+  margin-top: 30px;
+}
+
+.choice-card,
+.path-card {
+  border: 1px solid var(--line);
+  background: var(--panel);
+  color: inherit;
+  transition: transform 180ms ease, border-color 180ms ease, background 180ms ease;
+}
+
+.choice-card {
+  min-height: 250px;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: 28px;
+}
+
+.choice-card:hover,
+.path-card:hover {
+  transform: translateY(-4px);
+  border-color: rgba(142, 234, 91, 0.5);
+  background: rgba(255, 255, 255, 0.12);
+}
+
+.choice-card strong {
+  display: block;
+  margin-top: 10px;
+  font-size: 30px;
+  line-height: 1.08;
+}
+
+.choice-card p {
+  margin-top: 10px;
+  font-size: 13px;
+}
+
+.choice-button {
+  display: inline-flex;
+  width: fit-content;
+  min-height: 42px;
+  align-items: center;
+  padding: 0 16px;
+  border-radius: 999px;
+  background: var(--white);
+  color: #10271a;
+  font-size: 13px;
+  font-weight: 800;
+}
+
+.section-stack {
+  display: grid;
+  gap: 18px;
+}
+
+.section-card {
+  padding: 24px;
+}
+
+.section-card__header {
+  display: flex;
+  justify-content: space-between;
+  gap: 18px;
+  margin-bottom: 18px;
+}
+
+.section-card__header p {
+  margin-top: 8px;
+  font-size: 13px;
+}
+
+.path-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 12px;
+}
+
+.path-card {
+  min-height: 112px;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: 20px;
+}
+
+.path-card strong {
+  display: block;
+  font-size: 16px;
+  line-height: 1.2;
+}
+
+.path-card code {
+  display: block;
+  margin-top: 10px;
+  color: rgba(255, 255, 255, 0.68);
+  font: 600 11px/1.45 ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  word-break: break-word;
+}
+
+@media (max-width: 760px) {
+  .choice-grid,
+  .section-card__header {
+    grid-template-columns: 1fr;
+    flex-direction: column;
+  }
+
+  .top-row {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+}

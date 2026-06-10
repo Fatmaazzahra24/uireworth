@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ReWorth Frontend Launcher</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/launcher.css">
+</head>
+<body>
+  <main class="shell">
+    <section class="hero">
+      <div class="eyebrow">ReWorth Frontend</div>
+      <h1>Pilih katalog halaman.</h1>
+      <p>
+        Semua path frontend punya tombol sendiri. Pilih Mobile untuk screen app,
+        atau Dashboard untuk halaman desktop Admin, DLH, dan Seller.
+      </p>
+
+      <div class="choice-grid">
+        <a class="choice-card choice-card--mobile" href="/mobile">
+          <div>
+            <span class="choice-kicker">Mobile Static</span>
+            <strong>Mobile Frontend</strong>
+            <p>Semua halaman mobile: welcome, login, home, market, profile, checkout, dan lainnya.</p>
+          </div>
+          <span class="choice-button">Lihat Semua Mobile</span>
+        </a>
+
+        <a class="choice-card choice-card--dashboard" href="/dashboard">
+          <div>
+            <span class="choice-kicker">Desktop Static</span>
+            <strong>Dashboard Desktop</strong>
+            <p>Semua halaman dashboard static: Admin, DLH, Seller, detail page, form, dan pengaturan.</p>
+          </div>
+          <span class="choice-button">Lihat Semua Dashboard</span>
+        </a>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
