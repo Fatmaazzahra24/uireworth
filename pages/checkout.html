@@ -1,0 +1,80 @@
+﻿<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ReWorth / Checkout</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../styles.css">
+  <script defer src="../assets/js/app.js"></script>
+</head>
+<body data-page="checkout" data-partial="../partials/checkout.html" data-title="ReWorth / Checkout">
+  <main id="page-root" class="page-root">
+<section id="checkout" class="screen">
+      <div class="screen__meta"><strong>/checkout</strong><span>Checkout screen</span></div>
+      <article class="phone phone--paper">
+        <div class="phone__body">
+          <div class="checkout-top">
+            <div class="status-bar" style="color:rgba(255,255,255,0.8);">
+              <span>19:06</span>
+              <span class="status-icons"><span>&#9679;</span><span>&#9679;</span><span class="status-pill"></span></span>
+            </div>
+            <div class="top-row" style="margin-bottom:0;">
+              <div class="back-button" style="background:rgba(255,255,255,0.10);">←</div>
+              <h2 class="screen-title">Checkout</h2>
+            </div>
+          </div>
+          <div class="checkout-body">
+            <div class="steps">
+              <div class="step is-active">Alamat</div>
+              <div class="step">Pengiriman</div>
+              <div class="step">Pembayaran</div>
+            </div>
+            <div class="summary-grid" style="margin-top:14px;">
+              <div class="summary-card summary-card--light">
+                <div class="summary-row">
+                  <div>
+                    <p class="summary-card__title">Alamat Pengiriman</p>
+                    <p class="summary-card__text">Fatma<br>Jl. Serma Maun, Bojonegoro</p>
+                  </div>
+                  <span class="badge badge--success">Utama</span>
+                </div>
+              </div>
+              <div class="summary-card summary-card--light">
+                <div class="summary-row">
+                  <div>
+                    <p class="summary-card__title">Metode Pengiriman</p>
+                    <p class="summary-card__text">Standard • 3-4 hari</p>
+                  </div>
+                  <span class="badge badge--dark" style="color:#1f5e23;background:#eff7e7;border-color:rgba(31,94,35,.10);">Rp 0</span>
+                </div>
+              </div>
+              <div class="summary-card summary-card--light">
+                <div class="summary-row">
+                  <div>
+                    <p class="summary-card__title">Metode Pembayaran</p>
+                    <p class="summary-card__text">QRIS</p>
+                  </div>
+                  <span class="badge badge--dark" style="color:#1f5e23;background:#eff7e7;border-color:rgba(31,94,35,.10);">Aktif</span>
+                </div>
+              </div>
+              <div class="summary-card summary-card--light">
+                <p class="summary-card__title">Ringkasan Pembayaran</p>
+                <div class="detail-row" style="margin-top:10px;"><span class="detail-row__label" style="color:rgba(19,32,27,.68);">Subtotal Produk (2)</span><span class="detail-row__value" style="color:#1b3527;">Rp 45.000</span></div>
+                <div class="detail-row"><span class="detail-row__label" style="color:rgba(19,32,27,.68);">Biaya Pengiriman</span><span class="detail-row__value" style="color:#1b3527;">Rp 0</span></div>
+                <div class="detail-row"><span class="detail-row__label" style="color:rgba(19,32,27,.68);">Fee Platform 10%</span><span class="detail-row__value" style="color:#1b3527;">Rp 4.500</span></div>
+                <div class="detail-row"><span class="detail-row__label" style="color:rgba(19,32,27,.68);">Biaya Layanan</span><span class="detail-row__value" style="color:#1b3527;">Rp 500</span></div>
+                <div class="detail-divider light-divider" style="margin:12px 0;"></div>
+                <div class="summary-row"><span class="summary-total">Total</span><span class="summary-total">Rp 50.000</span></div>
+              </div>
+              <div class="button button--neon">Buat Pesanan</div>
+            </div>
+          </div>
+        </div>
+      </article>
+    </section>
+  </main>
+</body>
+</html>

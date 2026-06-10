@@ -1,0 +1,1189 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ReWorth Mobile HTML Deck</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="deck-header">
+    <h1 class="deck-title">ReWorth Mobile HTML Deck</h1>
+    <p class="deck-subtitle">
+      Semua screen mobile ReWorth dikumpulkan dalam satu file HTML agar mudah dipreview, dipecah, dan dipakai sebagai referensi editable untuk Figma.
+      Layout mengikuti tone hijau gelap dari Flutter app dan memakai aset yang sudah ada di folder project.
+    </p>
+    <nav class="toc" aria-label="Daftar screen">
+      <a href="#welcome">Welcome</a>
+      <a href="#login">Login</a>
+      <a href="#register">Register</a>
+      <a href="#home">Home</a>
+      <a href="#report">Report</a>
+      <a href="#report-history">Report History</a>
+      <a href="#market">Market</a>
+      <a href="#product-detail">Product Detail</a>
+      <a href="#wishlist">Wishlist</a>
+      <a href="#cart">Cart</a>
+      <a href="#checkout">Checkout</a>
+      <a href="#qris-payment">QRIS Payment</a>
+      <a href="#order-history">Order History</a>
+      <a href="#profile">Profile</a>
+      <a href="#profile-edit">Profile Edit</a>
+      <a href="#address">Address</a>
+      <a href="#payment-method">Payment Method</a>
+      <a href="#bank-account-detail">Bank Detail</a>
+      <a href="#rewards">Rewards</a>
+      <a href="#seller-registration">Seller Registration</a>
+      <a href="#seller-application">Seller Application</a>
+      <a href="#seller-application-detail">Seller Detail</a>
+      <a href="#notifications">Notifications</a>
+    </nav>
+  </header>
+
+  <main class="deck">
+    <section id="welcome" class="screen">
+      <div class="screen__meta"><strong>/welcome</strong><span>Landing screen</span></div>
+      <article class="phone phone--auth">
+        <div class="auth-beam"></div>
+        <div class="phone__body">
+          <div class="status-bar">
+            <span>19:06</span>
+            <span class="status-icons"><span>&#9679;</span><span>&#9679;</span><span class="status-pill"></span></span>
+          </div>
+          <div class="welcome-copy">
+            <div class="brand-wordmark">REWORTH</div>
+            <h2 class="headline">Ubah sampah jadi<br>langkah baik</h2>
+            <p class="body-copy">Laporkan, kumpulkan poin, dan dukung produk daur ulang dalam satu ekosistem hijau.</p>
+          </div>
+          <div class="auth-cta-stack">
+            <div class="pill-button">
+              <div class="pill-button__icon">→</div>
+              <div class="pill-button__label">Get Started</div>
+              <div class="pill-button__chevrons">›››</div>
+            </div>
+            <div class="auth-link">Belum punya akun? <strong>Daftar</strong></div>
+          </div>
+        </div>
+      </article>
+    </section>
+
+    <section id="login" class="screen">
+      <div class="screen__meta"><strong>/login</strong><span>Auth screen</span></div>
+      <article class="phone phone--auth">
+        <div class="auth-beam"></div>
+        <div class="phone__body">
+          <div class="status-bar">
+            <span>19:07</span>
+            <span class="status-icons"><span>&#9679;</span><span>&#9679;</span><span class="status-pill"></span></span>
+          </div>
+          <div class="glass-card">
+            <h2 class="glass-card__title">Masuk ke ReWorth</h2>
+            <p class="glass-card__subtitle">Login akun Anda</p>
+            <div class="stack-form">
+              <div class="field">
+                <div class="field__icon">✉</div>
+                <div class="field__text">demo@reworth.app</div>
+              </div>
+              <div class="field">
+                <div class="field__icon">🔒</div>
+                <div class="field__text">••••••••••</div>
+                <div class="field__suffix">◔</div>
+              </div>
+              <div class="row-space">
+                <div class="checkbox-row">
+                  <span class="checkbox"></span>
+                  <span class="muted">Ingat saya</span>
+                </div>
+                <div class="small-link">Lupa kata sandi?</div>
+              </div>
+              <div class="button button--neon">Masuk</div>
+              <div class="auth-link">Belum punya akun? <strong>Daftar</strong></div>
+            </div>
+          </div>
+        </div>
+      </article>
+    </section>
+
+    <section id="register" class="screen">
+      <div class="screen__meta"><strong>/register</strong><span>Auth screen</span></div>
+      <article class="phone phone--auth">
+        <div class="auth-beam"></div>
+        <div class="phone__body">
+          <div class="status-bar">
+            <span>19:08</span>
+            <span class="status-icons"><span>&#9679;</span><span>&#9679;</span><span class="status-pill"></span></span>
+          </div>
+          <div class="glass-card">
+            <h2 class="glass-card__title">Daftar ke ReWorth</h2>
+            <p class="glass-card__subtitle">Buat akun baru Anda</p>
+            <div class="stack-form">
+              <div class="field"><div class="field__icon">☺</div><div class="field__text">Nama lengkap</div></div>
+              <div class="field"><div class="field__icon">☎</div><div class="field__text">08xxxxxxxxxx atau +62xxxxxxxxxx</div></div>
+              <div class="field"><div class="field__icon">✉</div><div class="field__text">E-mail</div></div>
+              <div class="field">
+                <div class="field__icon">🔒</div>
+                <div class="field__text">Kata sandi</div>
+                <div class="field__suffix">◔</div>
+              </div>
+              <div class="field">
+                <div class="field__icon">✔</div>
+                <div class="field__text">Konfirmasi kata sandi</div>
+                <div class="field__suffix">◔</div>
+              </div>
+              <div class="checkbox-row">
+                <span class="checkbox checkbox--checked"></span>
+                <span class="body-copy" style="margin:0;font-size:12.8px;line-height:1.45;">Saya menyetujui kebijakan dan ketentuan.</span>
+              </div>
+              <div class="button button--neon">Buat Akun</div>
+              <div class="auth-link">Sudah punya akun? <strong>Masuk</strong></div>
+            </div>
+          </div>
+        </div>
+      </article>
+    </section>
+
+    <section id="home" class="screen">
+      <div class="screen__meta"><strong>/home</strong><span>Main dashboard</span></div>
+      <article class="phone phone--dark">
+        <div class="phone__body">
+          <div class="status-bar">
+            <span>19:06</span>
+            <span class="status-icons"><span>&#9679;</span><span>&#9679;</span><span class="status-pill"></span></span>
+          </div>
+          <div class="hero-brand">
+            <div class="brand-chip">
+              <img class="brand-chip__logo" src="assets/images/logo_reworth.jpeg" alt="ReWorth">
+              <div class="brand-chip__text">ReWorth</div>
+            </div>
+            <div class="icon-chip">🔔</div>
+          </div>
+          <div class="hero-copy">
+            <p class="greeting">Selamat datang kembali,</p>
+            <h2 class="name">fatma</h2>
+          </div>
+
+          <div class="banner" style="margin-top:14px;">
+            <h3 class="banner__title">Laporkan Sampah</h3>
+            <p class="banner__text">Bantu menjaga lingkungan dan dapatkan poin setiap hari.</p>
+            <span class="banner__cta">Mulai Sekarang</span>
+            <div class="banner__art banner__art--bags"></div>
+          </div>
+          <div class="dots"><span class="is-active"></span><span></span><span></span></div>
+
+          <div class="point-card" style="margin-top:14px;">
+            <p class="point-card__label">TOTAL POIN</p>
+            <div class="point-card__value">0</div>
+            <p class="point-card__sub">0 laporan tervalidasi</p>
+            <span class="point-card__button">Tukar Poin</span>
+          </div>
+
+          <div class="feature-grid" style="margin-top:14px;">
+            <div class="feature-card">
+              <h3 class="feature-card__title">Lapor Sampah</h3>
+              <p class="feature-card__text">Laporkan sampah di sekitar kamu</p>
+              <span class="feature-card__action">›</span>
+              <div class="feature-card__art feature-card__art--trash"></div>
+            </div>
+            <div class="feature-card">
+              <h3 class="feature-card__title">Mini Market</h3>
+              <p class="feature-card__text">Belanja produk olahan sampah</p>
+              <span class="feature-card__action">›</span>
+              <div class="feature-card__art feature-card__art--market"></div>
+            </div>
+          </div>
+
+          <div class="mission-card" style="margin-top:14px;">
+            <div class="mission-card__icon">◎</div>
+            <div>
+              <p class="mission-card__title">Misi Hari Ini</p>
+              <p class="mission-card__text">Laporkan 1 titik sampah untuk membuka progres harian.</p>
+            </div>
+            <div class="mission-card__stat">0/1</div>
+          </div>
+          <div class="reward-strip">
+            <span class="reward-chip">Disetujui +10 poin</span>
+            <span class="reward-chip">Ditolak +3 poin</span>
+          </div>
+
+          <div class="streak-card" style="margin-top:14px;">
+            <div class="streak-card__top">
+              <div class="streak-card__icon">🔥</div>
+              <div>
+                <p class="mission-card__title" style="font-size:18px;">Streak 7 Hari</p>
+                <p class="mission-card__text">Mulai lapor hari ini untuk menjaga progres tetap menyala.</p>
+              </div>
+              <div class="streak-card__badge"><strong>+25</strong><span class="muted" style="font-size:12px;">Poin</span></div>
+            </div>
+            <div class="streak-track">
+              <div class="streak-track__line"></div>
+              <div class="streak-track__fill"></div>
+              <div class="streak-days">
+                <div class="streak-day is-active"><div class="streak-day__dot">✓</div><span>1</span></div>
+                <div class="streak-day is-active"><div class="streak-day__dot">✓</div><span>2</span></div>
+                <div class="streak-day"><div class="streak-day__dot">◌</div><span>3</span></div>
+                <div class="streak-day"><div class="streak-day__dot">◌</div><span>4</span></div>
+                <div class="streak-day"><div class="streak-day__dot">◌</div><span>5</span></div>
+                <div class="streak-day"><div class="streak-day__dot">◌</div><span>6</span></div>
+                <div class="streak-day"><div class="streak-day__dot">◌</div><span>7</span></div>
+              </div>
+            </div>
+            <p class="mission-card__text">Lapor sampah setiap hari untuk membuka bonus konsisten mingguan.</p>
+          </div>
+
+          <div class="section-row" style="margin-top:18px;">
+            <h3 class="section-title section-title--dark" style="margin:0;">Produk Pilihan</h3>
+            <span class="section-row__action">Lihat Semua ›</span>
+          </div>
+          <div class="product-strip" style="margin-top:12px;">
+            <div class="product-card">
+              <div class="product-card__art art-shell"></div>
+              <p class="product-card__title">Kaca kerang</p>
+              <p class="product-card__price">Rp 20.000</p>
+              <div class="product-card__cart">🛒</div>
+            </div>
+            <div class="product-card">
+              <div class="product-card__art art-enzyme"></div>
+              <p class="product-card__title">Tempat Pensil Daur Ulang</p>
+              <p class="product-card__price">Rp 25.000</p>
+              <div class="product-card__cart">🛒</div>
+            </div>
+          </div>
+
+          <div class="section-row" style="margin-top:18px;">
+            <h3 class="section-title section-title--dark" style="margin:0;">Aktivitas Terbaru</h3>
+            <span class="section-row__action">Lihat Semua ›</span>
+          </div>
+          <div class="activity-card" style="margin-top:12px;">
+            <div class="activity-row">
+              <div class="activity-row__icon">✓</div>
+              <div>
+                <p class="activity-row__title">Laporan sampah diterima</p>
+                <p class="activity-row__text">Aktivitas lingkungan Anda</p>
+              </div>
+              <div class="activity-row__value">+10 Poin</div>
+              <div class="activity-row__time">10 menit lalu</div>
+            </div>
+            <div class="activity-row">
+              <div class="activity-row__icon">🏷</div>
+              <div>
+                <p class="activity-row__title">Reward ditukar</p>
+                <p class="activity-row__text">Pantau riwayat poin dan reward</p>
+              </div>
+              <div class="activity-row__value" style="color:#f0b35e;">-50 Poin</div>
+              <div class="activity-row__time">2 jam lalu</div>
+            </div>
+          </div>
+
+          <div class="nav-shell">
+            <div class="nav-shell__items">
+              <div class="nav-shell__item is-active"><div class="nav-shell__icon">⌂</div><div>Beranda</div></div>
+              <div class="nav-shell__item"><div class="nav-shell__icon">!</div><div>Lapor</div></div>
+              <div class="nav-shell__item"><div class="nav-shell__icon">▦</div><div>Market</div></div>
+              <div class="nav-shell__item"><div class="nav-shell__icon">☺</div><div>Profile</div></div>
+            </div>
+          </div>
+        </div>
+      </article>
+    </section>
+
+    <section id="report" class="screen">
+      <div class="screen__meta"><strong>/report</strong><span>Waste reporting form</span></div>
+      <article class="phone phone--dark">
+        <div class="phone__body">
+          <div class="status-bar">
+            <span>19:09</span>
+            <span class="status-icons"><span>&#9679;</span><span>&#9679;</span><span class="status-pill"></span></span>
+          </div>
+          <div class="top-row">
+            <div class="back-button">←</div>
+            <h2 class="screen-title screen-title--dark">Lapor Sampah</h2>
+          </div>
+          <div class="banner" style="min-height:164px;">
+            <h3 class="banner__title">Laporkan Sampah</h3>
+            <p class="banner__text">Bantu menjaga lingkungan dan dapatkan poin setiap hari.</p>
+            <span class="banner__cta">Mulai Sekarang</span>
+            <div class="banner__art art-trash" style="width:44%; background:none;"></div>
+          </div>
+          <div class="form-section" style="margin-top:14px;">
+            <h3 class="form-section__heading">Foto Bukti</h3>
+            <div class="upload-card">📷<br>Upload Foto</div>
+          </div>
+          <div class="form-section" style="margin-top:12px;">
+            <h3 class="form-section__heading">Jenis Sampah</h3>
+            <div class="chip-row">
+              <span class="chip is-active">Organik</span>
+              <span class="chip">Anorganik</span>
+              <span class="chip">B3</span>
+              <span class="chip">Lainnya</span>
+            </div>
+          </div>
+          <div class="form-section" style="margin-top:12px;">
+            <h3 class="form-section__heading">Tingkat Keparahan</h3>
+            <div class="chip-row">
+              <span class="chip">Rendah</span>
+              <span class="chip is-active">Sedang</span>
+              <span class="chip">Tinggi</span>
+            </div>
+          </div>
+          <div class="form-section" style="margin-top:12px;">
+            <h3 class="form-section__heading">Deskripsi</h3>
+            <div class="form-field">Tuliskan deskripsi kondisi sampah...</div>
+          </div>
+          <div class="form-section" style="margin-top:12px;">
+            <h3 class="form-section__heading">Lokasi</h3>
+            <div class="form-grid">
+              <div class="form-field">Jalan, Kelurahan, Kecamatan, Kota</div>
+              <div class="form-field">Patokan terdekat</div>
+            </div>
+          </div>
+          <div style="margin-top:14px;" class="button button--neon">Kirim Laporan</div>
+          <div class="nav-shell" style="margin-top:16px;">
+            <div class="nav-shell__items">
+              <div class="nav-shell__item"><div class="nav-shell__icon">⌂</div><div>Beranda</div></div>
+              <div class="nav-shell__item is-active"><div class="nav-shell__icon">!</div><div>Lapor</div></div>
+              <div class="nav-shell__item"><div class="nav-shell__icon">▦</div><div>Market</div></div>
+              <div class="nav-shell__item"><div class="nav-shell__icon">☺</div><div>Profile</div></div>
+            </div>
+          </div>
+        </div>
+      </article>
+    </section>
+
+    <section id="report-history" class="screen">
+      <div class="screen__meta"><strong>/report-history</strong><span>Report history</span></div>
+      <article class="phone phone--dark">
+        <div class="phone__body">
+          <div class="status-bar">
+            <span>19:06</span>
+            <span class="status-icons"><span>&#9679;</span><span>&#9679;</span><span class="status-pill"></span></span>
+          </div>
+          <div class="top-row">
+            <div class="back-button">←</div>
+            <h2 class="screen-title">Riwayat Lapor Sampah</h2>
+          </div>
+          <div class="tabs">
+            <div class="tab is-active">Aktif</div>
+            <div class="tab">Selesai</div>
+            <div class="tab">Ditolak</div>
+          </div>
+          <div class="order-list" style="margin-top:14px;">
+            <div class="order-item">
+              <div class="order-item__row">
+                <div class="thumb thumb--shell"></div>
+                <div>
+                  <p class="item-title">Laporan tepi jalan</p>
+                  <p class="item-subtitle">2 item • ORD-20320549</p>
+                  <div class="chip is-active" style="display:inline-flex;margin-top:8px;">Menunggu Verifikasi</div>
+                </div>
+                <div style="text-align:right;">
+                  <p class="item-price">Rp 50.000</p>
+                  <p class="price-sub">08/06/2026 • 19:05</p>
+                </div>
+              </div>
+              <div class="button button--neon" style="min-height:52px;">Lihat Detail Lengkap ▾</div>
+            </div>
+          </div>
+          <div class="order-item" style="margin-top:12px;">
+            <div class="detail-card">
+              <div class="detail-row"><span class="detail-row__label">Alamat Pengiriman</span><span class="detail-row__value">Jl. Serma Maun, Bojonegoro</span></div>
+              <div class="detail-row"><span class="detail-row__label">Ringkasan</span><span class="detail-row__value">Subtotal Rp 45.000</span></div>
+              <div class="detail-divider"></div>
+              <div class="detail-row"><span class="detail-row__label">Produk</span><span class="detail-row__value">Kaca kerang, Eco Enzyme</span></div>
+            </div>
+          </div>
+        </div>
+      </article>
+    </section>
+
+    <section id="market" class="screen">
+      <div class="screen__meta"><strong>/market</strong><span>Mini market</span></div>
+      <article class="phone phone--dark">
+        <div class="phone__body">
+          <div class="status-bar">
+            <span>19:06</span>
+            <span class="status-icons"><span>&#9679;</span><span>&#9679;</span><span class="status-pill"></span></span>
+          </div>
+          <div class="hero-brand">
+            <div class="brand-chip"><img class="brand-chip__logo" src="assets/images/logo_reworth.jpeg" alt="ReWorth"><div class="brand-chip__text">ReWorth</div></div>
+            <div class="hero-brand">
+              <div class="icon-chip">♡</div>
+              <div class="icon-chip">🛒</div>
+            </div>
+          </div>
+          <div class="hero-copy">
+            <p class="greeting">Selamat Berbelanja</p>
+            <h2 class="name">Fatma</h2>
+          </div>
+          <div class="banner" style="margin-top:12px; min-height:174px;">
+            <h3 class="banner__title">Mini Market</h3>
+            <p class="banner__text">Temukan produk daur ulang pilihan dengan kualitas terbaik.</p>
+            <span class="banner__cta">Lihat Detail</span>
+            <div class="banner__art banner__art--market"></div>
+          </div>
+          <div class="search-bar" style="margin-top:14px;"><span class="search-bar__icon">⌕</span><span class="search-bar__text">Cari produk</span></div>
+          <div class="sort-chips" style="margin-top:14px;">
+            <span class="chip is-active">Terlaris</span>
+            <span class="chip">Termurah</span>
+            <span class="chip">Terbaru</span>
+            <span class="chip">Stok Tersedia</span>
+          </div>
+          <div class="wishlist-grid" style="margin-top:14px;">
+            <div class="wishlist-card">
+              <div class="wishlist-item__art thumb thumb--shell">
+                <div class="wishlist-item__favorite">♥</div>
+              </div>
+              <div class="wishlist-card__body">
+                <p class="item-title">Kaca kerang</p>
+                <p class="mini-store mini-store--dark">🏪 Seller Eco Craft</p>
+                <div class="price-row">
+                  <p class="item-price">Rp 20.000</p>
+                  <div class="circle-button" style="background:#e8eed8;color:#193226;font-size:18px;">🛒</div>
+                </div>
+              </div>
+            </div>
+            <div class="wishlist-card">
+              <div class="wishlist-item__art thumb thumb--enzyme">
+                <div class="wishlist-item__favorite">♥</div>
+              </div>
+              <div class="wishlist-card__body">
+                <p class="item-title">Eco Enzyme 1 Liter</p>
+                <p class="mini-store mini-store--dark">🏪 Seller Kompos Hijau</p>
+                <div class="price-row">
+                  <p class="item-price">Rp 25.000</p>
+                  <div class="circle-button" style="background:#e8eed8;color:#193226;font-size:18px;">🛒</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="banner" style="margin-top:14px; min-height:132px; background:linear-gradient(145deg,#e7f0d8,#d7e8be);">
+            <h3 class="banner__title" style="font-size:22px; max-width:170px;">Daftar Seller</h3>
+            <p class="banner__text" style="max-width:180px;">Mulai jual produk daur ulangmu langsung dari ReWorth.</p>
+            <span class="banner__cta">Ajukan Seller</span>
+          </div>
+          <div class="nav-shell">
+            <div class="nav-shell__items">
+              <div class="nav-shell__item"><div class="nav-shell__icon">⌂</div><div>Beranda</div></div>
+              <div class="nav-shell__item"><div class="nav-shell__icon">!</div><div>Lapor</div></div>
+              <div class="nav-shell__item is-active"><div class="nav-shell__icon">▦</div><div>Market</div></div>
+              <div class="nav-shell__item"><div class="nav-shell__icon">☺</div><div>Profile</div></div>
+            </div>
+          </div>
+        </div>
+      </article>
+    </section>
+
+    <section id="product-detail" class="screen">
+      <div class="screen__meta"><strong>/market/product/:id</strong><span>Product detail</span></div>
+      <article class="phone phone--dark">
+        <div class="phone__body">
+          <div class="status-bar">
+            <span>19:10</span>
+            <span class="status-icons"><span>&#9679;</span><span>&#9679;</span><span class="status-pill"></span></span>
+          </div>
+          <div class="top-row">
+            <div class="back-button">←</div>
+            <div class="screen-title">Detail Produk</div>
+            <div class="back-button" style="margin-left:auto;">♡</div>
+          </div>
+          <div class="product-detail-card">
+            <div class="product-card__art art-shell" style="height:220px;border-radius:26px;"></div>
+            <div class="tabs" style="margin-top:12px;">
+              <div class="tab is-active">Foto</div>
+              <div class="tab">Detail</div>
+              <div class="tab">Ulasan</div>
+            </div>
+            <h3 class="section-title section-title--dark" style="margin-top:10px;">Kaca kerang</h3>
+            <div class="section-row">
+              <span class="mini-store mini-store--dark">🏪 Seller Eco Craft</span>
+              <span class="badge badge--success">4.8 ★</span>
+            </div>
+            <div class="summary-row">
+              <div>
+                <p class="summary-total">Rp 20.000</p>
+                <p class="section-subtitle">Stok tersedia • Lokasi Indonesia</p>
+              </div>
+              <span class="badge badge--dark">Kerajinan</span>
+            </div>
+            <div class="chip-row">
+              <span class="chip">Berat: 250 g</span>
+              <span class="chip">Total terjual 120</span>
+            </div>
+            <div class="light-panel" style="margin-top:4px;">
+              <h4 class="section-title section-title--light" style="font-size:16px;margin:0 0 8px;">Deskripsi</h4>
+              <p class="section-subtitle" style="color:rgba(19,32,27,.72);">Produk ramah lingkungan dari Mini Market ReWorth yang diolah dari material berkelanjutan.</p>
+              <div class="detail-divider" style="background:rgba(19,32,27,.08);margin:14px 0;"></div>
+              <h4 class="section-title section-title--light" style="font-size:16px;margin:0 0 8px;">Cara Penggunaan</h4>
+              <p class="section-subtitle" style="color:rgba(19,32,27,.72);">Gunakan produk sesuai kebutuhan. Simpan di tempat sejuk dan kering.</p>
+            </div>
+            <div class="button button--light" style="margin-top:8px;">Tambah ke Keranjang</div>
+            <div class="button button--neon" style="margin-top:10px;">Beli Sekarang</div>
+          </div>
+        </div>
+      </article>
+    </section>
+
+    <section id="wishlist" class="screen">
+      <div class="screen__meta"><strong>/wishlist</strong><span>Wishlist screen</span></div>
+      <article class="phone phone--dark">
+        <div class="phone__body">
+          <div class="status-bar">
+            <span>19:03</span>
+            <span class="status-icons"><span>&#9679;</span><span>&#9679;</span><span class="status-pill"></span></span>
+          </div>
+          <div class="top-row">
+            <div class="back-button">←</div>
+            <h2 class="screen-title">Wishlist</h2>
+          </div>
+          <div class="wishlist-grid">
+            <div class="wishlist-card">
+              <div class="wishlist-item__art thumb thumb--shell">
+                <div class="wishlist-item__favorite">♥</div>
+              </div>
+              <div class="wishlist-card__body">
+                <p class="item-title">Kaca kerang</p>
+                <p class="mini-store mini-store--dark">🏪 Seller Eco Craft</p>
+                <div class="price-row">
+                  <p class="item-price">Rp 20.000</p>
+                  <div class="circle-button" style="background:#e8eed8;color:#193226;font-size:18px;">🛒</div>
+                </div>
+              </div>
+            </div>
+            <div class="wishlist-card">
+              <div class="wishlist-item__art thumb thumb--enzyme">
+                <div class="wishlist-item__favorite">♥</div>
+              </div>
+              <div class="wishlist-card__body">
+                <p class="item-title">Eco Enzyme 1 Liter</p>
+                <p class="mini-store mini-store--dark">🏪 Seller Kompos Hijau</p>
+                <div class="price-row">
+                  <p class="item-price">Rp 25.000</p>
+                  <div class="circle-button" style="background:#e8eed8;color:#193226;font-size:18px;">🛒</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
+    </section>
+
+    <section id="cart" class="screen">
+      <div class="screen__meta"><strong>/cart</strong><span>Cart screen</span></div>
+      <article class="phone phone--dark">
+        <div class="phone__body">
+          <div class="status-bar">
+            <span>19:04</span>
+            <span class="status-icons"><span>&#9679;</span><span>&#9679;</span><span class="status-pill"></span></span>
+          </div>
+          <div class="top-row">
+            <div class="back-button">←</div>
+            <h2 class="screen-title">Keranjang</h2>
+          </div>
+          <div class="cart-list">
+            <div class="cart-item">
+              <div class="cart-item__row">
+                <div class="checkbox checkbox--checked"></div>
+                <div class="thumb thumb--enzyme"></div>
+                <div>
+                  <p class="item-title">Eco Enzyme 1...</p>
+                  <p class="item-price">Rp 25.000</p>
+                  <p class="price-sub">Subtotal: Rp 25.000</p>
+                </div>
+                <div class="stepper">
+                  <div class="stepper__button stepper__button--white">−</div>
+                  <div class="stepper__value">1</div>
+                  <div class="stepper__button stepper__button--mint">+</div>
+                </div>
+              </div>
+            </div>
+            <div class="cart-item">
+              <div class="cart-item__row">
+                <div class="checkbox checkbox--checked"></div>
+                <div class="thumb thumb--shell"></div>
+                <div>
+                  <p class="item-title">Kaca kerang</p>
+                  <p class="item-price">Rp 20.000</p>
+                  <p class="price-sub">Subtotal: Rp 20.000</p>
+                </div>
+                <div class="stepper">
+                  <div class="stepper__button stepper__button--white">−</div>
+                  <div class="stepper__value">1</div>
+                  <div class="stepper__button stepper__button--mint">+</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="cart-footer">
+            <div class="cart-footer__row">
+              <div>
+                <p class="cart-footer__small">Total</p>
+                <p class="cart-footer__total">Rp 45.000</p>
+                <p class="cart-footer__meta">2 produk dipilih - 2 item</p>
+              </div>
+              <div class="button button--light">Checkout</div>
+            </div>
+          </div>
+        </div>
+      </article>
+    </section>
+
+    <section id="checkout" class="screen">
+      <div class="screen__meta"><strong>/checkout</strong><span>Checkout screen</span></div>
+      <article class="phone phone--paper">
+        <div class="phone__body">
+          <div class="checkout-top">
+            <div class="status-bar" style="color:rgba(255,255,255,0.8);">
+              <span>19:06</span>
+              <span class="status-icons"><span>&#9679;</span><span>&#9679;</span><span class="status-pill"></span></span>
+            </div>
+            <div class="top-row" style="margin-bottom:0;">
+              <div class="back-button" style="background:rgba(255,255,255,0.10);">←</div>
+              <h2 class="screen-title">Checkout</h2>
+            </div>
+          </div>
+          <div class="checkout-body">
+            <div class="steps">
+              <div class="step is-active">Alamat</div>
+              <div class="step">Pengiriman</div>
+              <div class="step">Pembayaran</div>
+            </div>
+            <div class="summary-grid" style="margin-top:14px;">
+              <div class="summary-card summary-card--light">
+                <div class="summary-row">
+                  <div>
+                    <p class="summary-card__title">Alamat Pengiriman</p>
+                    <p class="summary-card__text">Fatma<br>Jl. Serma Maun, Bojonegoro</p>
+                  </div>
+                  <span class="badge badge--success">Utama</span>
+                </div>
+              </div>
+              <div class="summary-card summary-card--light">
+                <div class="summary-row">
+                  <div>
+                    <p class="summary-card__title">Metode Pengiriman</p>
+                    <p class="summary-card__text">Standard • 3-4 hari</p>
+                  </div>
+                  <span class="badge badge--dark" style="color:#1f5e23;background:#eff7e7;border-color:rgba(31,94,35,.10);">Rp 0</span>
+                </div>
+              </div>
+              <div class="summary-card summary-card--light">
+                <div class="summary-row">
+                  <div>
+                    <p class="summary-card__title">Metode Pembayaran</p>
+                    <p class="summary-card__text">QRIS</p>
+                  </div>
+                  <span class="badge badge--dark" style="color:#1f5e23;background:#eff7e7;border-color:rgba(31,94,35,.10);">Aktif</span>
+                </div>
+              </div>
+              <div class="summary-card summary-card--light">
+                <p class="summary-card__title">Ringkasan Pembayaran</p>
+                <div class="detail-row" style="margin-top:10px;"><span class="detail-row__label" style="color:rgba(19,32,27,.68);">Subtotal Produk (2)</span><span class="detail-row__value" style="color:#1b3527;">Rp 45.000</span></div>
+                <div class="detail-row"><span class="detail-row__label" style="color:rgba(19,32,27,.68);">Biaya Pengiriman</span><span class="detail-row__value" style="color:#1b3527;">Rp 0</span></div>
+                <div class="detail-row"><span class="detail-row__label" style="color:rgba(19,32,27,.68);">Fee Platform 10%</span><span class="detail-row__value" style="color:#1b3527;">Rp 4.500</span></div>
+                <div class="detail-row"><span class="detail-row__label" style="color:rgba(19,32,27,.68);">Biaya Layanan</span><span class="detail-row__value" style="color:#1b3527;">Rp 500</span></div>
+                <div class="detail-divider light-divider" style="margin:12px 0;"></div>
+                <div class="summary-row"><span class="summary-total">Total</span><span class="summary-total">Rp 50.000</span></div>
+              </div>
+              <div class="button button--neon">Buat Pesanan</div>
+            </div>
+          </div>
+        </div>
+      </article>
+    </section>
+
+    <section id="qris-payment" class="screen">
+      <div class="screen__meta"><strong>/checkout/payment</strong><span>QRIS upload proof</span></div>
+      <article class="phone phone--paper">
+        <div class="phone__body">
+          <div class="checkout-top" style="padding-bottom:0;">
+            <div class="status-bar" style="color:rgba(255,255,255,0.8);">
+              <span>19:06</span>
+              <span class="status-icons"><span>&#9679;</span><span>&#9679;</span><span class="status-pill"></span></span>
+            </div>
+            <div class="top-row" style="margin-bottom:0;">
+              <div class="back-button" style="background:rgba(255,255,255,0.10);">←</div>
+              <h2 class="screen-title" style="text-align:center;flex:1;">Upload Bukti<br>Pembayaran</h2>
+              <div style="width:46px;"></div>
+            </div>
+          </div>
+          <div class="checkout-body">
+            <div class="summary-card summary-card--light">
+              <div class="detail-row"><span class="detail-row__label" style="color:rgba(19,32,27,.68);">Kode Pesanan</span><span class="detail-row__value" style="color:#1b3527;">ORD-20320549</span></div>
+              <div class="detail-row"><span class="detail-row__label" style="color:rgba(19,32,27,.68);">Kode Pembayaran</span><span class="detail-row__value" style="color:#1b3527;">QRD-20320549</span></div>
+              <div class="detail-row"><span class="detail-row__label" style="color:rgba(19,32,27,.68);">Total Bayar</span><span class="detail-row__value" style="color:#1b3527;">Rp 50.000</span></div>
+              <div class="detail-row"><span class="detail-row__label" style="color:rgba(19,32,27,.68);">Berlaku Sampai</span><span class="detail-row__value qr-time">14:56</span></div>
+            </div>
+            <div class="qr-card" style="margin-top:16px;">
+              <h3 class="section-title section-title--light" style="margin:0;text-align:center;">QRIS Toko / Admin</h3>
+              <img class="qr-card__code" src="assets/images/qris_store.jpeg" alt="QRIS code">
+              <p class="center-note light-note" style="margin-top:10px;">Jika belum ada file QRIS asli, letakkan gambar QR di assets/images/qris_store.jpeg</p>
+            </div>
+            <div class="payment-flow" style="margin-top:16px;">
+              <div class="info-banner__title">Alur Pembayaran</div>
+              <ol>
+                <li>Scan QRIS toko/admin di atas.</li>
+                <li>Selesaikan pembayaran di aplikasi bank/e-wallet Anda.</li>
+                <li>Upload foto bukti pembayaran.</li>
+                <li>Admin akan memverifikasi sebelum pesanan diteruskan ke seller.</li>
+              </ol>
+            </div>
+            <div class="proof-card" style="margin-top:16px;">
+              <h3 class="section-title section-title--light" style="margin:0 0 10px;">Bukti Pembayaran</h3>
+              <div class="proof-placeholder">Belum ada foto bukti pembayaran yang dipilih.</div>
+              <div class="upload-actions">
+                <div class="upload-action">🖼 Galeri</div>
+                <div class="upload-action">📷 Kamera</div>
+              </div>
+            </div>
+            <div class="button button--ghost" style="margin-top:16px; background:#d9ddd6;color:#9aa19a;border:0;">Kirim Bukti Pembayaran</div>
+          </div>
+        </div>
+      </article>
+    </section>
+
+    <section id="order-history" class="screen">
+      <div class="screen__meta"><strong>/order-history</strong><span>Order history</span></div>
+      <article class="phone phone--dark">
+        <div class="phone__body">
+          <div class="status-bar">
+            <span>19:06</span>
+            <span class="status-icons"><span>&#9679;</span><span>&#9679;</span><span class="status-pill"></span></span>
+          </div>
+          <div class="top-row">
+            <div class="back-button">←</div>
+            <h2 class="screen-title">Riwayat Pesanan</h2>
+          </div>
+          <div class="tabs">
+            <div class="tab is-active">Aktif</div>
+            <div class="tab">Selesai</div>
+            <div class="tab">Dibatalkan</div>
+          </div>
+          <div class="order-list" style="margin-top:14px;">
+            <div class="order-item">
+              <div class="order-item__row">
+                <div class="thumb thumb--shell"></div>
+                <div>
+                  <p class="item-title">Kaca kerang</p>
+                  <p class="item-subtitle">2 item • ORD-20320549</p>
+                  <div class="chip is-active" style="display:inline-flex;margin-top:8px;">Menunggu Pembayaran</div>
+                  <div class="chip" style="display:inline-flex;margin-top:8px;background:rgba(255,255,255,.06);">Belum menyelesaikan pembayaran</div>
+                </div>
+                <div style="text-align:right;">
+                  <p class="item-price">Rp 50.000</p>
+                  <p class="price-sub">08/06/2026 • 19:05</p>
+                </div>
+              </div>
+              <div class="button button--neon" style="min-height:54px;">Lihat Detail Lengkap ▾</div>
+            </div>
+            <div class="order-item">
+              <div class="detail-card">
+                <div class="detail-row"><span class="detail-row__label">Alamat Pengiriman</span><span class="detail-row__value">Jl. Serma Maun, Bojonegoro</span></div>
+                <div class="detail-row"><span class="detail-row__label">Ringkasan Pembayaran</span><span class="detail-row__value">Subtotal produk Rp 45.000</span></div>
+                <div class="detail-row"><span class="detail-row__label">Biaya pengiriman</span><span class="detail-row__value">Rp 0</span></div>
+                <div class="detail-row"><span class="detail-row__label">Fee platform</span><span class="detail-row__value">Rp 4.500</span></div>
+                <div class="detail-row"><span class="detail-row__label">Biaya layanan</span><span class="detail-row__value">Rp 500</span></div>
+                <div class="detail-divider"></div>
+                <div class="detail-row"><span class="detail-row__label">Daftar Produk</span><span class="detail-row__value">Kaca kerang, Eco Enzyme</span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
+    </section>
+
+    <section id="profile" class="screen">
+      <div class="screen__meta"><strong>/profile</strong><span>Profile dashboard</span></div>
+      <article class="phone phone--dark">
+        <div class="phone__body">
+          <div class="status-bar">
+            <span>19:04</span>
+            <span class="status-icons"><span>&#9679;</span><span>&#9679;</span><span class="status-pill"></span></span>
+          </div>
+          <div class="profile-top">
+            <div class="profile-top__avatar">☺</div>
+            <p class="profile-top__name">fatma</p>
+            <p class="profile-top__email">azzahrafatma727@gmail.com</p>
+            <div class="stats-row">
+              <div class="stat-card"><p class="stat-card__value">0</p><p class="stat-card__label">Total Poin</p></div>
+              <div class="stat-card"><p class="stat-card__value">0</p><p class="stat-card__label">Laporan</p></div>
+            </div>
+          </div>
+          <div class="menu-list" style="margin-top:16px;">
+            <div class="menu-item"><div class="menu-item__icon">🎁</div><div><p class="menu-item__title">Tukar Poin Reward</p><p class="menu-item__subtitle">0 poin tersedia</p></div><div>›</div></div>
+            <div class="menu-item"><div class="menu-item__icon">▤</div><div><p class="menu-item__title">Riwayat Pesanan</p><p class="menu-item__subtitle">Pantau status belanja mini market Anda</p></div><div>›</div></div>
+            <div class="menu-item"><div class="menu-item__icon">⟲</div><div><p class="menu-item__title">Riwayat Lapor Sampah</p><p class="menu-item__subtitle">Lihat riwayat laporan Anda</p></div><div>›</div></div>
+            <div class="menu-item"><div class="menu-item__icon">▣</div><div><p class="menu-item__title">Akun Bank</p><p class="menu-item__subtitle">Tambahkan akun bank Anda</p></div><div>›</div></div>
+            <div class="menu-item"><div class="menu-item__icon">⌂</div><div><p class="menu-item__title">Alamat Saya</p><p class="menu-item__subtitle">Kelola alamat pengiriman</p></div><div>›</div></div>
+            <div class="menu-item"><div class="menu-item__icon">✎</div><div><p class="menu-item__title">Edit Profil</p><p class="menu-item__subtitle">Ubah data profil Anda</p></div><div>›</div></div>
+            <div class="menu-item"><div class="menu-item__icon">🏪</div><div><p class="menu-item__title">Pengajuan Seller</p><p class="menu-item__subtitle">Daftar menjadi seller sekarang</p></div><div class="badge badge--warning">Belum Daftar</div></div>
+            <div class="menu-item"><div class="menu-item__icon">↪</div><div><p class="menu-item__title">Keluar</p><p class="menu-item__subtitle">Keluar dari akun</p></div><div>›</div></div>
+          </div>
+          <div class="nav-shell">
+            <div class="nav-shell__items">
+              <div class="nav-shell__item"><div class="nav-shell__icon">⌂</div><div>Beranda</div></div>
+              <div class="nav-shell__item"><div class="nav-shell__icon">!</div><div>Lapor</div></div>
+              <div class="nav-shell__item"><div class="nav-shell__icon">▦</div><div>Market</div></div>
+              <div class="nav-shell__item is-active"><div class="nav-shell__icon">☺</div><div>Profile</div></div>
+            </div>
+          </div>
+        </div>
+      </article>
+    </section>
+
+    <section id="profile-edit" class="screen">
+      <div class="screen__meta"><strong>/profile-edit</strong><span>Edit profile form</span></div>
+      <article class="phone phone--dark">
+        <div class="phone__body">
+          <div class="status-bar">
+            <span>19:07</span>
+            <span class="status-icons"><span>&#9679;</span><span>&#9679;</span><span class="status-pill"></span></span>
+          </div>
+          <div class="top-row">
+            <div class="back-button">←</div>
+            <h2 class="screen-title">Edit Profil</h2>
+          </div>
+          <div class="profile-edit-top">
+            <div class="profile-edit-top__photo">☺</div>
+            <div class="profile-edit-top__button">📷</div>
+            <div>
+              <div class="screen-title" style="font-size:22px;text-align:center;">fatma</div>
+              <div class="center-note" style="margin-top:4px;">azzahrafatma727@gmail.com</div>
+            </div>
+          </div>
+          <div class="form-section" style="margin-top:14px;">
+            <div class="form-grid">
+              <div>
+                <label class="form-field-label">Nama Lengkap</label>
+                <div class="form-field">Masukkan nama lengkap Anda</div>
+              </div>
+              <div>
+                <label class="form-field-label">Nomor Telepon</label>
+                <div class="form-field">Contoh: 081234567890</div>
+              </div>
+              <div>
+                <label class="form-field-label">Email</label>
+                <div class="form-field">azzahrafatma727@gmail.com</div>
+              </div>
+              <div>
+                <label class="form-field-label">Status Seller</label>
+                <div class="form-field">nonaktif</div>
+              </div>
+              <div>
+                <label class="form-field-label">Bergabung Sejak</label>
+                <div class="form-field">Juni 2026</div>
+              </div>
+            </div>
+          </div>
+          <div class="button button--neon" style="margin-top:14px;">Simpan Perubahan</div>
+        </div>
+      </article>
+    </section>
+
+    <section id="address" class="screen">
+      <div class="screen__meta"><strong>/address</strong><span>Address list</span></div>
+      <article class="phone phone--dark">
+        <div class="phone__body">
+          <div class="status-bar">
+            <span>19:04</span>
+            <span class="status-icons"><span>&#9679;</span><span>&#9679;</span><span class="status-pill"></span></span>
+          </div>
+          <div class="top-row">
+            <div class="back-button">←</div>
+            <h2 class="screen-title">Alamat Saya</h2>
+          </div>
+          <div class="address-banner">ⓘ Alamat di sini akan otomatis muncul di checkout.</div>
+          <div class="address-list" style="margin-top:14px;">
+            <div class="address-item">
+              <div class="address-item__header">
+                <div>
+                  <p class="address-item__name">Fatma</p>
+                  <p class="address-item__phone">+62 851-6363-2919</p>
+                </div>
+                <span class="badge badge--dark">Utama</span>
+              </div>
+              <p class="address-item__body">Jl. Serma Maun, Banjarrejo, Bojonegoro, Jawa Timur, 6112<br>Patokan: rumahoren</p>
+            </div>
+          </div>
+          <div class="floating-cta">📍 Tambah Alamat</div>
+        </div>
+      </article>
+    </section>
+
+    <section id="payment-method" class="screen">
+      <div class="screen__meta"><strong>/payment-method</strong><span>Bank account list</span></div>
+      <article class="phone phone--dark">
+        <div class="phone__body">
+          <div class="status-bar">
+            <span>19:07</span>
+            <span class="status-icons"><span>&#9679;</span><span>&#9679;</span><span class="status-pill"></span></span>
+          </div>
+          <div class="top-row">
+            <div class="back-button">←</div>
+            <h2 class="screen-title">Akun Bank</h2>
+          </div>
+          <div class="bank-list">
+            <div class="bank-item">
+              <div class="bank-item__header">
+                <div style="display:flex;gap:12px;align-items:center;">
+                  <div class="bank-item__logo">▣</div>
+                  <div>
+                    <p class="bank-item__name">bank jatim</p>
+                    <p class="bank-item__number">•••• •••• 0046</p>
+                  </div>
+                </div>
+                <span class="badge badge--success">Utama</span>
+              </div>
+            </div>
+          </div>
+          <div class="floating-cta">+ Tambah Bank</div>
+        </div>
+      </article>
+    </section>
+
+    <section id="bank-account-detail" class="screen">
+      <div class="screen__meta"><strong>/bank-account-detail</strong><span>Bank detail</span></div>
+      <article class="phone phone--dark">
+        <div class="phone__body">
+          <div class="status-bar">
+            <span>19:11</span>
+            <span class="status-icons"><span>&#9679;</span><span>&#9679;</span><span class="status-pill"></span></span>
+          </div>
+          <div class="top-row">
+            <div class="back-button">←</div>
+            <h2 class="screen-title">Detail Akun Bank</h2>
+          </div>
+          <div class="bank-item">
+            <div class="bank-item__header">
+              <div style="display:flex;gap:12px;align-items:center;">
+                <div class="bank-item__logo">▣</div>
+                <div>
+                  <p class="bank-item__name">bank jatim</p>
+                  <p class="bank-item__number">•••• •••• 0046</p>
+                </div>
+              </div>
+              <span class="badge badge--success">Utama</span>
+            </div>
+            <div class="detail-divider"></div>
+            <div class="form-grid">
+              <div><label class="form-field-label">Jenis Kartu</label><div class="form-field">ATM / Debit</div></div>
+              <div><label class="form-field-label">Nama Pemilik</label><div class="form-field">Fatma</div></div>
+              <div><label class="form-field-label">Nomor Rekening</label><div class="form-field">**** **** 0046</div></div>
+            </div>
+          </div>
+          <div class="button button--ghost" style="margin-top:14px;">Simpan Perubahan</div>
+        </div>
+      </article>
+    </section>
+
+    <section id="rewards" class="screen">
+      <div class="screen__meta"><strong>/rewards</strong><span>Rewards screen</span></div>
+      <article class="phone phone--dark">
+        <div class="phone__body">
+          <div class="status-bar">
+            <span>19:12</span>
+            <span class="status-icons"><span>&#9679;</span><span>&#9679;</span><span class="status-pill"></span></span>
+          </div>
+          <div class="top-row">
+            <div class="back-button">←</div>
+            <h2 class="screen-title">Tukar Poin Reward</h2>
+          </div>
+          <div class="point-card">
+            <p class="point-card__label">Poin Anda</p>
+            <div class="point-card__value">0</div>
+            <p class="point-card__sub">Poin tersedia untuk ditukar</p>
+          </div>
+          <div class="search-bar" style="margin-top:14px;"><span class="search-bar__icon">⌕</span><span class="search-bar__text">Cari reward...</span></div>
+          <div class="reward-list" style="margin-top:14px;">
+            <div class="reward-item" style="background:linear-gradient(145deg,#e5f0db,#bfd6ac); color:#20372e;">
+              <div class="summary-row">
+                <div style="display:flex;gap:12px;align-items:center;">
+                  <div class="icon-chip" style="background:#fff;color:#1f5e23;">🎁</div>
+                  <div>
+                    <p class="item-title" style="color:#193226;">Voucher Belanja</p>
+                    <p class="item-subtitle" style="color:rgba(25,50,38,.70);">Hadiah populer</p>
+                  </div>
+                </div>
+                <span class="badge badge--success" style="background:#1f5e23;color:#fff;">100 poin</span>
+              </div>
+            </div>
+            <div class="reward-item" style="background:linear-gradient(145deg,#f0eadb,#d9d3b0); color:#20372e;">
+              <div class="summary-row">
+                <div style="display:flex;gap:12px;align-items:center;">
+                  <div class="icon-chip" style="background:#fff;color:#1f5e23;">🎁</div>
+                  <div>
+                    <p class="item-title" style="color:#193226;">Botol Tumbler</p>
+                    <p class="item-subtitle" style="color:rgba(25,50,38,.70);">Limited reward</p>
+                  </div>
+                </div>
+                <span class="badge badge--success" style="background:#1f5e23;color:#fff;">250 poin</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
+    </section>
+
+    <section id="seller-registration" class="screen">
+      <div class="screen__meta"><strong>/seller-registration</strong><span>Seller application form</span></div>
+      <article class="phone phone--dark">
+        <div class="phone__body">
+          <div class="status-bar">
+            <span>19:08</span>
+            <span class="status-icons"><span>&#9679;</span><span>&#9679;</span><span class="status-pill"></span></span>
+          </div>
+          <div class="top-row">
+            <div class="back-button">←</div>
+            <h2 class="screen-title">Pengajuan Seller</h2>
+          </div>
+          <div class="seller-card">
+            <div class="seller-card__user">
+              <div class="seller-avatar">☺</div>
+              <div style="flex:1;">
+                <p class="menu-item__title" style="margin:0;">fatma</p>
+                <p class="seller-card__text">azzahrafatma727@gmail.com</p>
+                <p class="seller-card__text">+62 851-6363-2919</p>
+              </div>
+              <span class="badge badge--warning">Belum Daftar</span>
+            </div>
+            <div class="form-section">
+              <h3 class="form-section__heading" style="color:#8eea5b;">Informasi Toko</h3>
+              <div class="form-grid">
+                <div><label class="form-field-label">Nama Toko *</label><div class="form-field">Masukkan nama toko Anda</div></div>
+                <div><label class="form-field-label">Deskripsi Toko</label><div class="form-field" style="min-height:74px;">Ceritakan produk dan keunggulan toko Anda</div></div>
+                <div><label class="form-field-label">Alamat Toko</label><div class="form-field">Jalan, Kelurahan, Kecamatan, Kota</div></div>
+                <div><label class="form-field-label">Kategori Jualan</label><div class="form-field">Kerajinan Daur Ulang ▾</div></div>
+                <div><label class="form-field-label">Jenis Produk</label><div class="form-field">Contoh: Tas daur ulang, kompos ...</div></div>
+              </div>
+            </div>
+            <div class="form-section">
+              <h3 class="form-section__heading" style="color:#8eea5b;">Dokumen Pendukung</h3>
+              <div class="form-grid">
+                <div><label class="form-field-label">Foto Toko (Opsional)</label><div class="upload-card">⬆<br>Upload Foto</div></div>
+                <div><label class="form-field-label">Foto Produk (Opsional)</label><div class="upload-card">⬆<br>Upload Foto</div></div>
+              </div>
+            </div>
+            <div class="form-section">
+              <h3 class="form-section__heading" style="color:#8eea5b;">Akun Dashboard Seller</h3>
+              <div class="form-note">Username dan password untuk login ke dashboard seller</div>
+              <div class="form-grid" style="margin-top:12px;">
+                <div><label class="form-field-label">Username Dashboard *</label><div class="form-field">Buat username untuk login dashboard</div></div>
+                <div><label class="form-field-label">Password Dashboard *</label><div class="form-field">Minimal 8 karakter</div></div>
+                <div><label class="form-field-label">Konfirmasi Password *</label><div class="form-field">Ulangi password</div></div>
+              </div>
+            </div>
+            <div class="button button--neon">Ajukan Menjadi Seller</div>
+          </div>
+        </div>
+      </article>
+    </section>
+
+    <section id="seller-application" class="screen">
+      <div class="screen__meta"><strong>/seller-application</strong><span>Seller connection page</span></div>
+      <article class="phone phone--dark">
+        <div class="phone__body">
+          <div class="status-bar">
+            <span>19:13</span>
+            <span class="status-icons"><span>&#9679;</span><span>&#9679;</span><span class="status-pill"></span></span>
+          </div>
+          <div class="top-row">
+            <div class="back-button">←</div>
+            <h2 class="screen-title">Koneksi pengajuan seller</h2>
+          </div>
+          <div class="seller-card">
+            <div class="seller-card__user">
+              <div class="seller-avatar">☺</div>
+              <div style="flex:1;">
+                <p class="menu-item__title" style="margin:0;">fatma</p>
+                <p class="seller-card__text">Status: nonaktif</p>
+                <p class="seller-card__text">Silakan lengkapi data untuk mulai mengajukan seller.</p>
+              </div>
+              <span class="badge badge--warning">Belum Daftar</span>
+            </div>
+            <div class="summary-grid">
+              <div class="summary-card">
+                <p class="summary-card__title">Tambahkan Rekening Pencairan</p>
+                <p class="summary-card__text">Bank yang terhubung akan dipakai untuk proses pencairan seller.</p>
+              </div>
+              <div class="summary-card">
+                <p class="summary-card__title">Buka Form Pengajuan Seller</p>
+                <p class="summary-card__text">Lengkapi informasi toko dan akun dashboard seller.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
+    </section>
+
+    <section id="seller-application-detail" class="screen">
+      <div class="screen__meta"><strong>/seller-application-detail</strong><span>Seller application detail</span></div>
+      <article class="phone phone--dark">
+        <div class="phone__body">
+          <div class="status-bar">
+            <span>19:14</span>
+            <span class="status-icons"><span>&#9679;</span><span>&#9679;</span><span class="status-pill"></span></span>
+          </div>
+          <div class="top-row">
+            <div class="back-button">←</div>
+            <h2 class="screen-title">Detail Pengajuan Seller</h2>
+          </div>
+          <div class="detail-card">
+            <div class="summary-card">
+              <p class="summary-card__title">Menunggu Verifikasi</p>
+              <p class="summary-card__text">Pengajuan seller Anda sedang dalam proses verifikasi oleh admin. Proses ini biasanya memakan waktu 1x24 jam.</p>
+            </div>
+            <div class="summary-card">
+              <div class="detail-row"><span class="detail-row__label">Nama Toko</span><span class="detail-row__value">ReWorth Eco Craft</span></div>
+              <div class="detail-row"><span class="detail-row__label">Kategori</span><span class="detail-row__value">Kerajinan</span></div>
+              <div class="detail-row"><span class="detail-row__label">Jenis Produk</span><span class="detail-row__value">Kerajinan daur ulang</span></div>
+              <div class="detail-row"><span class="detail-row__label">Username Dashboard</span><span class="detail-row__value">reworthseller</span></div>
+              <div class="detail-row"><span class="detail-row__label">Alamat Toko</span><span class="detail-row__value">Bojonegoro</span></div>
+              <div class="detail-row"><span class="detail-row__label">Diajukan pada</span><span class="detail-row__value">08 Juni 2026</span></div>
+            </div>
+            <div class="button button--neon">Lanjut ke Dashboard Seller</div>
+          </div>
+        </div>
+      </article>
+    </section>
+
+    <section id="notifications" class="screen">
+      <div class="screen__meta"><strong>/notifications</strong><span>Notification list</span></div>
+      <article class="phone phone--dark">
+        <div class="phone__body">
+          <div class="status-bar">
+            <span>19:15</span>
+            <span class="status-icons"><span>&#9679;</span><span>&#9679;</span><span class="status-pill"></span></span>
+          </div>
+          <div class="top-row">
+            <div class="back-button">←</div>
+            <div>
+              <h2 class="screen-title" style="font-size:22px;">Notifikasi</h2>
+              <p class="section-subtitle">Pantau update laporan dan pesanan Anda.</p>
+            </div>
+          </div>
+          <div class="screen-title" style="font-size:14px;margin-bottom:8px;color:#e7f2d9;">Hari ini</div>
+          <div class="cart-list">
+            <div class="notification-card">
+              <div class="notification-card__icon">⏲</div>
+              <div>
+                <p class="notification-card__title">Laporan sedang ditinjau</p>
+                <p class="notification-card__body">Admin sedang memeriksa laporan terbaru Anda.</p>
+                <div class="notification-card__meta"><span class="meta-pill">Sedang diproses</span><span class="meta-time">12 menit lalu</span></div>
+              </div>
+            </div>
+            <div class="notification-card">
+              <div class="notification-card__icon">✓</div>
+              <div>
+                <p class="notification-card__title">Poin berhasil ditambahkan</p>
+                <p class="notification-card__body">Kontribusi lingkungan Anda berhasil menambah poin akun.</p>
+                <div class="notification-card__meta"><span class="meta-pill">+10 poin</span><span class="meta-time">2 jam lalu</span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
+    </section>
+  </main>
+</body>
+</html>

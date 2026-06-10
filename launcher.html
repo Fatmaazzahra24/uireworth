@@ -1,0 +1,153 @@
+﻿<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ReWorth HTML Launcher</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    .launcher {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 32px 16px 56px;
+    }
+    .launcher__hero {
+      border-radius: 32px;
+      padding: 28px;
+      background: linear-gradient(145deg, rgba(255,255,255,0.08), rgba(10,27,17,0.56));
+      border: 1px solid rgba(255,255,255,0.10);
+      box-shadow: 0 20px 44px rgba(0,0,0,0.22);
+    }
+    .launcher__grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 12px;
+      margin-top: 18px;
+    }
+    .launcher__card {
+      padding: 14px;
+      border-radius: 20px;
+      background: rgba(255,255,255,0.06);
+      border: 1px solid rgba(255,255,255,0.08);
+    }
+    .launcher__card a {
+      font-weight: 700;
+      color: #fff;
+    }
+    .launcher__card p {
+      margin: 8px 0 0;
+      color: rgba(255,255,255,0.72);
+      font-size: 13px;
+      line-height: 1.45;
+    }
+  </style>
+</head>
+<body>
+  <div class="launcher">
+    <div class="launcher__hero">
+      <h1 class="deck-title">ReWorth HTML Launcher</h1>
+      <p class="deck-subtitle">
+        Setiap screen mobile sudah dipisah ke file HTML sendiri di folder <code>pages/</code>.
+        Klik screen di bawah untuk buka route yang sesuai, atau pakai file ini sebagai pintu masuk hosting.
+      </p>
+      <div class="launcher__grid">
+      <div class="launcher__card">
+        <a href="/pages/welcome.html">Welcome</a>
+        <p>welcome</p>
+      </div>
+      <div class="launcher__card">
+        <a href="/pages/login.html">Login</a>
+        <p>login</p>
+      </div>
+      <div class="launcher__card">
+        <a href="/pages/register.html">Register</a>
+        <p>register</p>
+      </div>
+      <div class="launcher__card">
+        <a href="/pages/home.html">Beranda</a>
+        <p>home</p>
+      </div>
+      <div class="launcher__card">
+        <a href="/pages/report.html">Lapor Sampah</a>
+        <p>report</p>
+      </div>
+      <div class="launcher__card">
+        <a href="/pages/report-history.html">Riwayat Lapor Sampah</a>
+        <p>report-history</p>
+      </div>
+      <div class="launcher__card">
+        <a href="/pages/market.html">Mini Market</a>
+        <p>market</p>
+      </div>
+      <div class="launcher__card">
+        <a href="/pages/product-detail.html">Detail Produk</a>
+        <p>product-detail</p>
+      </div>
+      <div class="launcher__card">
+        <a href="/pages/wishlist.html">Wishlist</a>
+        <p>wishlist</p>
+      </div>
+      <div class="launcher__card">
+        <a href="/pages/cart.html">Keranjang</a>
+        <p>cart</p>
+      </div>
+      <div class="launcher__card">
+        <a href="/pages/checkout.html">Checkout</a>
+        <p>checkout</p>
+      </div>
+      <div class="launcher__card">
+        <a href="/pages/qris-payment.html">Upload Bukti Pembayaran</a>
+        <p>qris-payment</p>
+      </div>
+      <div class="launcher__card">
+        <a href="/pages/order-history.html">Riwayat Pesanan</a>
+        <p>order-history</p>
+      </div>
+      <div class="launcher__card">
+        <a href="/pages/profile.html">Profil</a>
+        <p>profile</p>
+      </div>
+      <div class="launcher__card">
+        <a href="/pages/profile-edit.html">Edit Profil</a>
+        <p>profile-edit</p>
+      </div>
+      <div class="launcher__card">
+        <a href="/pages/address.html">Alamat Saya</a>
+        <p>address</p>
+      </div>
+      <div class="launcher__card">
+        <a href="/pages/payment-method.html">Akun Bank</a>
+        <p>payment-method</p>
+      </div>
+      <div class="launcher__card">
+        <a href="/pages/bank-account-detail.html">Detail Akun Bank</a>
+        <p>bank-account-detail</p>
+      </div>
+      <div class="launcher__card">
+        <a href="/pages/rewards.html">Tukar Poin Reward</a>
+        <p>rewards</p>
+      </div>
+      <div class="launcher__card">
+        <a href="/pages/seller-registration.html">Pengajuan Seller</a>
+        <p>seller-registration</p>
+      </div>
+      <div class="launcher__card">
+        <a href="/pages/seller-application.html">Koneksi Pengajuan Seller</a>
+        <p>seller-application</p>
+      </div>
+      <div class="launcher__card">
+        <a href="/pages/seller-application-detail.html">Detail Pengajuan Seller</a>
+        <p>seller-application-detail</p>
+      </div>
+      <div class="launcher__card">
+        <a href="/pages/notifications.html">Notifikasi</a>
+        <p>notifications</p>
+      </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

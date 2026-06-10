@@ -1,0 +1,66 @@
+﻿<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ReWorth / Upload Bukti Pembayaran</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../styles.css">
+  <script defer src="../assets/js/app.js"></script>
+</head>
+<body data-page="qris-payment" data-partial="../partials/qris-payment.html" data-title="ReWorth / Upload Bukti Pembayaran">
+  <main id="page-root" class="page-root">
+<section id="qris-payment" class="screen">
+      <div class="screen__meta"><strong>/checkout/payment</strong><span>QRIS upload proof</span></div>
+      <article class="phone phone--paper">
+        <div class="phone__body">
+          <div class="checkout-top" style="padding-bottom:0;">
+            <div class="status-bar" style="color:rgba(255,255,255,0.8);">
+              <span>19:06</span>
+              <span class="status-icons"><span>&#9679;</span><span>&#9679;</span><span class="status-pill"></span></span>
+            </div>
+            <div class="top-row" style="margin-bottom:0;">
+              <div class="back-button" style="background:rgba(255,255,255,0.10);">←</div>
+              <h2 class="screen-title" style="text-align:center;flex:1;">Upload Bukti<br>Pembayaran</h2>
+              <div style="width:46px;"></div>
+            </div>
+          </div>
+          <div class="checkout-body">
+            <div class="summary-card summary-card--light">
+              <div class="detail-row"><span class="detail-row__label" style="color:rgba(19,32,27,.68);">Kode Pesanan</span><span class="detail-row__value" style="color:#1b3527;">ORD-20320549</span></div>
+              <div class="detail-row"><span class="detail-row__label" style="color:rgba(19,32,27,.68);">Kode Pembayaran</span><span class="detail-row__value" style="color:#1b3527;">QRD-20320549</span></div>
+              <div class="detail-row"><span class="detail-row__label" style="color:rgba(19,32,27,.68);">Total Bayar</span><span class="detail-row__value" style="color:#1b3527;">Rp 50.000</span></div>
+              <div class="detail-row"><span class="detail-row__label" style="color:rgba(19,32,27,.68);">Berlaku Sampai</span><span class="detail-row__value qr-time">14:56</span></div>
+            </div>
+            <div class="qr-card" style="margin-top:16px;">
+              <h3 class="section-title section-title--light" style="margin:0;text-align:center;">QRIS Toko / Admin</h3>
+              <img class="qr-card__code" src="../assets/images/qris_store.jpeg" alt="QRIS code">
+              <p class="center-note light-note" style="margin-top:10px;">Jika belum ada file QRIS asli, letakkan gambar QR di assets/images/qris_store.jpeg</p>
+            </div>
+            <div class="payment-flow" style="margin-top:16px;">
+              <div class="info-banner__title">Alur Pembayaran</div>
+              <ol>
+                <li>Scan QRIS toko/admin di atas.</li>
+                <li>Selesaikan pembayaran di aplikasi bank/e-wallet Anda.</li>
+                <li>Upload foto bukti pembayaran.</li>
+                <li>Admin akan memverifikasi sebelum pesanan diteruskan ke seller.</li>
+              </ol>
+            </div>
+            <div class="proof-card" style="margin-top:16px;">
+              <h3 class="section-title section-title--light" style="margin:0 0 10px;">Bukti Pembayaran</h3>
+              <div class="proof-placeholder">Belum ada foto bukti pembayaran yang dipilih.</div>
+              <div class="upload-actions">
+                <div class="upload-action">🖼 Galeri</div>
+                <div class="upload-action">📷 Kamera</div>
+              </div>
+            </div>
+            <div class="button button--ghost" style="margin-top:16px; background:#d9ddd6;color:#9aa19a;border:0;">Kirim Bukti Pembayaran</div>
+          </div>
+        </div>
+      </article>
+    </section>
+  </main>
+</body>
+</html>
