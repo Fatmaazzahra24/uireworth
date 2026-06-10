@@ -1,0 +1,72 @@
+.static-map {
+  position: relative;
+  height: 100%;
+  min-height: 360px;
+  overflow: hidden;
+  background:
+    radial-gradient(circle at 24% 24%, rgba(46, 125, 50, 0.12), transparent 10rem),
+    radial-gradient(circle at 76% 70%, rgba(245, 158, 11, 0.12), transparent 12rem),
+    linear-gradient(135deg, #eef7ee, #f8faf8);
+}
+
+.static-map::before,
+.static-map::after {
+  content: "";
+  position: absolute;
+  inset: 14%;
+  border: 1px dashed rgba(46, 125, 50, 0.22);
+  border-radius: 44% 56% 48% 52%;
+  transform: rotate(-8deg);
+}
+
+.static-map::after {
+  inset: 26% 18%;
+  transform: rotate(18deg);
+}
+
+.map-pin {
+  position: absolute;
+  z-index: 1;
+  width: 16px;
+  height: 16px;
+  border: 2px solid #ffffff;
+  border-radius: 999px;
+  box-shadow: 0 8px 18px rgba(17, 24, 39, 0.22);
+}
+
+.map-pin.ringan { background: #2e7d32; }
+.map-pin.sedang { background: #f59e0b; }
+.map-pin.parah { background: #ef4444; }
+
+.detail-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.detail-box {
+  padding: 14px;
+  border: 1px solid #e5e7eb;
+  border-radius: 16px;
+  background: #ffffff;
+}
+
+.detail-box span {
+  display: block;
+  color: #6b7280;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.detail-box strong {
+  display: block;
+  margin-top: 6px;
+  color: #111827;
+  font-size: 15px;
+}
+
+@media (max-width: 900px) {
+  .detail-grid {
+    grid-template-columns: 1fr;
+  }
+}

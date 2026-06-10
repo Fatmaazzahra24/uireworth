@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Login - ReWorth Dashboard</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/app.css">
+</head>
+<body class="login-page">
+  <main class="login-card">
+    <div class="login-brand">
+      <div class="login-mark">R</div>
+      <div>
+        <h1>Masuk Dashboard</h1>
+        <p>Versi frontend statis untuk Admin, DLH, dan seller.</p>
+      </div>
+    </div>
+
+    <form id="static-login-form">
+      <label class="form-field">
+        <span>Pilih Dashboard</span>
+        <select name="role" required>
+          <option value="admin">Admin</option>
+          <option value="dlh">DLH</option>
+          <option value="seller">Seller</option>
+        </select>
+      </label>
+      <label class="form-field">
+        <span>Email atau Username</span>
+        <input value="admin@reworth.app" aria-label="Email demo">
+      </label>
+      <label class="form-field">
+        <span>Password</span>
+        <input type="password" value="password123" aria-label="Password demo">
+      </label>
+      <button class="btn btn-primary" type="submit" style="width: 100%;">Buka Dashboard</button>
+    </form>
+
+    <p style="margin-top: 18px; font-size: 13px;">
+      Ini hanya tampilan frontend statis. Tidak ada proses login backend.
+    </p>
+  </main>
+
+  <script>
+    document.getElementById('static-login-form').addEventListener('submit', function (event) {
+      event.preventDefault();
+      const role = new FormData(event.currentTarget).get('role') || 'admin';
+      window.location.href = 'dashboard.html?role=' + encodeURIComponent(role) + '&page=dashboard';
+    });
+  </script>
+</body>
+</html>
